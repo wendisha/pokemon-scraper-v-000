@@ -17,4 +17,7 @@ class Pokemon
     find_pokemon = db.execute("SELECT * FROM pokemon WHERE id = ?", id).first
     Pokemon.new(id: find_pokemon[0], name: find_pokemon[1], type: find_pokemon[2], hp: find_pokemon[3], db: db)
   end
+  
+  def alter_hp
+  end
 end
